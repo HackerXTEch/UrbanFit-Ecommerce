@@ -1,0 +1,554 @@
+/* Kids' Page Styles */
+.kids-page {
+  min-height: 100vh;
+  background: #DAFFEF;
+}
+
+/* Kids' Hero Section */
+.kids-hero {
+  position: relative;
+  padding: 120px 0 80px;
+  background: linear-gradient(135deg, #DAFFEF 0%, #fff8e1 100%);
+  overflow: hidden;
+}
+
+.kids-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.kids-hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.kids-hero-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #ffc107 0%, #ff8f00 100%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.kids-hero-badge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.kids-hero-badge:hover::before {
+  left: 100%;
+}
+
+.kids-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #2D898B;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.kids-hero-highlight {
+  background: linear-gradient(135deg, #ffc107 0%, #ff8f00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+.kids-hero-description {
+  font-size: 1.2rem;
+  color: #2D898B;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.kids-hero-features {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.kids-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.kids-feature-icon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #ffc107 0%, #ff8f00 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+}
+
+.kids-feature-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2D898B;
+}
+
+.kids-hero-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.kids-btn-primary {
+  background: linear-gradient(135deg, #ffc107 0%, #ff8f00 100%);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(255, 193, 7, 0.3);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.kids-btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.kids-btn-primary:hover::before {
+  left: 100%;
+}
+
+.kids-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(255, 193, 7, 0.4);
+}
+
+.kids-btn-secondary {
+  background: transparent;
+  color: #ffc107;
+  border: 2px solid #ffc107;
+  padding: 13px 28px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.kids-btn-secondary:hover {
+  background: #ffc107;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Kids' Hero Visual */
+.kids-hero-visual {
+  flex: 1;
+  max-width: 500px;
+  position: relative;
+}
+
+.kids-hero-img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 193, 7, 0.3);
+  object-fit: cover;
+  animation: kidsBounce 3s ease-in-out infinite;
+}
+
+@keyframes kidsBounce {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.kids-hero-image-container {
+  position: relative;
+  animation: kidsBounce 3s ease-in-out infinite;
+}
+
+@keyframes kidsBounce {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(1deg); }
+}
+
+.kids-hero-main-image {
+  width: 100%;
+  height: 600px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(255, 193, 7, 0.2);
+}
+
+/* Floating Cards */
+.kids-floating-card {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.1);
+  transition: all 0.3s ease;
+}
+
+.kids-floating-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.kids-card-1 {
+  top: 80px;
+  left: -50px;
+  animation: kidsCardFloat1 3s ease-in-out infinite;
+}
+
+.kids-card-2 {
+  top: 300px;
+  right: -60px;
+  animation: kidsCardFloat2 3s ease-in-out infinite 1s;
+}
+
+.kids-card-3 {
+  bottom: 100px;
+  left: -40px;
+  animation: kidsCardFloat3 3s ease-in-out infinite 2s;
+}
+
+@keyframes kidsCardFloat1 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+}
+
+@keyframes kidsCardFloat2 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(-3deg); }
+}
+
+@keyframes kidsCardFloat3 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+}
+
+.kids-card-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.kids-card-image {
+  flex-shrink: 0;
+}
+
+.kids-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.kids-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2D898B;
+}
+
+.kids-card-price {
+  font-size: 12px;
+  color: #2D898B;
+  opacity: 0.8;
+}
+
+/* Kids' Hero Decoration */
+.kids-hero-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.kids-decoration-shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+.kids-shape-1 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #ffc107 0%, #ff8f00 100%);
+  top: -100px;
+  right: -100px;
+  animation: kidsShapeFloat1 8s ease-in-out infinite;
+}
+
+.kids-shape-2 {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  bottom: -75px;
+  left: -75px;
+  animation: kidsShapeFloat2 6s ease-in-out infinite reverse;
+}
+
+.kids-shape-3 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #2D898B 0%, #4fb3b6 100%);
+  top: 200px;
+  left: -50px;
+  animation: kidsShapeFloat3 10s ease-in-out infinite;
+}
+
+.kids-decoration-lines {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.kids-line {
+  width: 2px;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, #ffc107, transparent);
+  opacity: 0.2;
+  margin: 15px 0;
+  animation: kidsLinePulse 2s ease-in-out infinite;
+}
+
+.kids-line:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.kids-line:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes kidsShapeFloat1 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+@keyframes kidsShapeFloat2 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(-180deg); }
+}
+
+@keyframes kidsShapeFloat3 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-25px) rotate(360deg); }
+}
+
+@keyframes kidsLinePulse {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.8; }
+}
+
+/* Categories Section */
+.kids-categories {
+  padding: 80px 0;
+  background: #DAFFEF;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.kids-section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2D898B;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.kids-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #ffc107 0%, #ff8f00 100%);
+  border-radius: 2px;
+}
+
+.kids-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.kids-category-item {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.kids-category-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ffc107 0%, #ff8f00 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.kids-category-item:hover::before {
+  opacity: 0.05;
+}
+
+.kids-category-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.kids-category-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #ffc107 0%, #ff8f00 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.kids-category-item:hover .kids-category-icon {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.kids-category-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2D898B;
+  margin-bottom: 15px;
+}
+
+.kids-category-desc {
+  font-size: 1rem;
+  color: #2D898B;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .kids-hero-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .kids-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .kids-hero-features {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .kids-hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .kids-btn-primary,
+  .kids-btn-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .kids-floating-card {
+    display: none;
+  }
+  
+  .kids-section-title {
+    font-size: 2rem;
+  }
+  
+  .kids-categories-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .kids-hero {
+    padding: 80px 0 60px;
+  }
+  
+  .kids-hero-title {
+    font-size: 2rem;
+  }
+  
+  .kids-hero-description {
+    font-size: 1rem;
+  }
+  
+  .kids-hero-features {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .kids-category-item {
+    padding: 30px 20px;
+  }
+  
+  .kids-category-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .kids-category-title {
+    font-size: 1.2rem;
+  }
+}

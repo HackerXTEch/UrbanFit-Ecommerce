@@ -1,0 +1,308 @@
+/* Women Evening Wear Page Styles */
+.women-evening-page {
+  background-color: #DAFFEF;
+  color: #2D898B;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.evening-hero {
+  padding: 120px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.evening-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.evening-hero-content {
+  z-index: 2;
+}
+
+.evening-hero-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #e74c3c, #2D898B);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+
+.evening-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #2D898B;
+}
+
+.evening-hero-highlight {
+  background: linear-gradient(135deg, #e74c3c, #2D898B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.evening-hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #2D898B;
+  opacity: 0.8;
+}
+
+.evening-hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.evening-btn-primary {
+  background: linear-gradient(135deg, #e74c3c, #2D898B);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
+}
+
+.evening-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+}
+
+.evening-btn-secondary {
+  background: transparent;
+  color: #2D898B;
+  border: 2px solid #2D898B;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.evening-btn-secondary:hover {
+  background: #2D898B;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.evening-hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.evening-hero-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(231, 76, 60, 0.2);
+  object-fit: cover;
+}
+
+.evening-hero-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(231, 76, 60, 0.2);
+  object-fit: cover;
+}
+
+/* Products Section */
+.evening-products {
+  padding: 80px 0;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.evening-section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #2D898B;
+}
+
+.evening-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.evening-product-card {
+  background: white;
+  border-radius: 20px;
+  overflow: visible;
+  box-shadow: 0 10px 30px rgba(231, 76, 60, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.evening-product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(231, 76, 60, 0.2);
+}
+
+.evening-product-image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  flex-shrink: 0;
+}
+
+.evening-product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.evening-product-card:hover .evening-product-img {
+  transform: scale(1.05);
+}
+
+.evening-product-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, #e74c3c, #2D898B);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.evening-product-badge.new {
+  background: linear-gradient(135deg, #2D898B, #e74c3c);
+}
+
+.evening-product-info {
+  padding: 25px;
+}
+
+.evening-product-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2D898B;
+}
+
+.evening-product-desc {
+  color: #2D898B;
+  opacity: 0.7;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.evening-product-price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #2D898B;
+  opacity: 0.6;
+  margin-right: 10px;
+}
+
+.sale-price {
+  color: #e74c3c;
+}
+
+.evening-product-badge.sale {
+  background: linear-gradient(135deg, #e74c3c, #ff6b6b);
+}
+
+.evening-product-badge.trending {
+  background: linear-gradient(135deg, #2D898B, #3ecf8e);
+}
+
+.evening-product-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.stars {
+  color: #ffc107;
+  font-size: 1rem;
+}
+
+.rating-text {
+  color: #2D898B;
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+.evening-add-to-cart {
+  width: 100%;
+  background: linear-gradient(135deg, #e74c3c, #2D898B);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.evening-add-to-cart:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .evening-hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .evening-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .evening-hero-buttons {
+    justify-content: center;
+  }
+  
+  .evening-products-grid {
+    grid-template-columns: 1fr;
+  }
+}

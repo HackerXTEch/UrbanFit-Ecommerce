@@ -1,0 +1,454 @@
+/* Men's Casual Wear Page Styles */
+.men-casual-page {
+  min-height: 100vh;
+  background-color: #DAFFEF;
+  color: #2D898B;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.casual-hero {
+  padding: 120px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.casual-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.casual-hero-content {
+  z-index: 2;
+}
+
+.casual-hero-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #2D898B, #27ae60);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(45, 137, 139, 0.3);
+}
+
+.casual-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #2D898B;
+}
+
+.casual-hero-highlight {
+  background: linear-gradient(135deg, #27ae60, #2D898B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.casual-hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #2D898B;
+  opacity: 0.8;
+}
+
+.casual-hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.casual-btn-primary,
+.casual-btn-secondary {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.casual-btn-primary {
+  background: linear-gradient(135deg, #2D898B, #27ae60);
+  color: white;
+  box-shadow: 0 4px 15px rgba(45, 137, 139, 0.3);
+}
+
+.casual-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(45, 137, 139, 0.4);
+}
+
+.casual-btn-secondary {
+  background: transparent;
+  color: #2D898B;
+  border: 2px solid #2D898B;
+}
+
+.casual-btn-secondary:hover {
+  background: #2D898B;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.casual-hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.casual-hero-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(45, 137, 139, 0.2);
+  object-fit: cover;
+}
+
+/* Products Section */
+.casual-products {
+  padding: 80px 0;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.casual-section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #2D898B;
+}
+
+.casual-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.casual-product-card {
+  background: white;
+  border-radius: 20px;
+  overflow: visible;
+  box-shadow: 0 8px 30px rgba(45, 137, 139, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.casual-product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(45, 137, 139, 0.2);
+}
+
+.casual-product-image {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  border-radius: 20px 20px 0 0;
+  flex-shrink: 0;
+}
+
+.casual-product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.casual-product-card:hover .casual-product-img {
+  transform: scale(1.05);
+}
+
+.casual-product-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, #2D898B, #27ae60);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.casual-product-badge.new {
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+}
+
+.casual-product-badge.sale {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.casual-product-info {
+  padding: 25px;
+}
+
+.casual-product-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2D898B;
+}
+
+.casual-product-desc {
+  font-size: 1rem;
+  color: #2D898B;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.casual-product-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2D898B;
+  margin-bottom: 12px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.sale-price {
+  color: #e74c3c;
+}
+
+.casual-product-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.stars {
+  color: #ffc107;
+  font-size: 1rem;
+}
+
+.rating-text {
+  font-size: 0.9rem;
+  color: #2D898B;
+  opacity: 0.6;
+}
+
+.casual-availability-status {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.status-available {
+  color: #27AE60;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.status-unavailable {
+  color: #E74C3C;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.unavailable-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.product-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.casual-add-to-cart {
+  flex: 1;
+  padding: 12px;
+  background: linear-gradient(135deg, #2D898B, #27ae60);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.casual-add-to-cart:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(45, 137, 139, 0.3);
+}
+
+.casual-add-to-cart:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.casual-add-to-cart:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.casual-add-to-wishlist {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  background: white;
+  color: #e74c3c;
+  border: 2px solid #e74c3c;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.casual-add-to-wishlist:hover {
+  background: #e74c3c;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+
+/* Features Section */
+.casual-features {
+  padding: 80px 0;
+  background: rgba(45, 137, 139, 0.05);
+}
+
+.casual-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.casual-feature-item {
+  text-align: center;
+  padding: 40px 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(45, 137, 139, 0.1);
+  transition: all 0.3s ease;
+}
+
+.casual-feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(45, 137, 139, 0.15);
+}
+
+.casual-feature-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #2D898B, #27ae60);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.casual-feature-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2D898B;
+}
+
+.casual-feature-desc {
+  font-size: 1rem;
+  color: #2D898B;
+  opacity: 0.7;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .casual-hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .casual-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .casual-products-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .casual-hero-buttons {
+    justify-content: center;
+  }
+  
+  .casual-features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .casual-hero {
+    padding: 100px 0 60px;
+  }
+  
+  .casual-hero-title {
+    font-size: 2rem;
+  }
+  
+  .casual-hero-description {
+    font-size: 1rem;
+  }
+  
+  .casual-products {
+    padding: 60px 0;
+  }
+  
+  .casual-section-title {
+    font-size: 2rem;
+  }
+}
