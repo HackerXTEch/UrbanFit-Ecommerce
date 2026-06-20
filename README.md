@@ -64,8 +64,8 @@ UrbanFit isn't just another shopping app it's your personal stylist, wardrobe cu
 
 <br>
 <div align="center">
-  <img src="screenshots/features.png" alt="Featured Collection" width="450">
   <img src="screenshots/categorypage.png" alt="Category Page" width="400">
+  <img src="screenshots/features.png" alt="Featured Collection" width="450">
 </div>
 <br>
 
