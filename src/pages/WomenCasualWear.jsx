@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { getProductsByTypeAndCategory } from '../services/api';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
+import { formatINR } from '../utils/currency';
 import './WomenCasualWear.css';
 
 const WomenCasualWear = () => {
@@ -168,9 +169,9 @@ const WomenCasualWear = () => {
                     </div>
                     <p className="casual-product-price">
                       {product.original_price && (
-                        <span className="original-price">${parseFloat(product.original_price).toFixed(2)}</span>
+                        <span className="original-price">{formatINR(product.original_price)}</span>
                       )}
-                      ${parseFloat(product.price).toFixed(2)}
+                      {formatINR(product.price)}
                     </p>
                     <div className="casual-product-rating">
                       <span className="stars">{'★'.repeat(product.stars || 0)}{'☆'.repeat(5 - (product.stars || 0))}</span>

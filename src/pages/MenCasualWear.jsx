@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { formatINR } from '../utils/currency';
 import { Link } from 'react-router-dom';
 import { getProductsByTypeAndCategory } from '../services/api';
 import { useCart } from '../context/CartContext';
@@ -132,11 +133,11 @@ const MenCasualWear = () => {
                     <p className="casual-product-price">
                       {product.original_price ? (
                         <>
-                          <span className="original-price">${product.original_price}</span>
-                          <span className="sale-price">${product.price}</span>
+                          <span className="original-price">{formatINR(product.original_price)}</span>
+                          <span className="sale-price">{formatINR(product.price)}</span>
                         </>
                       ) : (
-                        `$${product.price}`
+                        formatINR(product.price)
                       )}
                     </p>
                     <div className="casual-product-rating">

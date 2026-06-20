@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { formatINR } from '../utils/currency';
 import './Orders.css';
 
 const API_BASE = 'http://localhost:3001';
@@ -322,7 +323,7 @@ const Orders = () => {
                         <line x1="12" y1="1" x2="12" y2="23" stroke="currentColor" strokeWidth="2"/>
                         <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <span className="order-total">${parseFloat(order.total).toFixed(2)}</span>
+                      <span className="order-total">{formatINR(parseFloat(order.total))}</span>
                     </div>
                   </div>
 
@@ -387,7 +388,7 @@ const Orders = () => {
                             <p>Size: {item.size} | Qty: {item.quantity}</p>
                           </div>
                           <div className="order-item-price">
-                            ${parseFloat(item.price * item.quantity).toFixed(2)}
+                            {formatINR(parseFloat(item.price * item.quantity))}
                           </div>
                         </div>
                       ))}
@@ -407,19 +408,19 @@ const Orders = () => {
                       <h3>Payment Summary</h3>
                       <div className="payment-row">
                         <span>Subtotal:</span>
-                        <span>${parseFloat(order.subtotal).toFixed(2)}</span>
+                        <span>{formatINR(parseFloat(order.subtotal))}</span>
                       </div>
                       <div className="payment-row">
                         <span>Shipping:</span>
-                        <span>${parseFloat(order.shipping).toFixed(2)}</span>
+                        <span>{formatINR(parseFloat(order.shipping))}</span>
                       </div>
                       <div className="payment-row">
                         <span>Tax:</span>
-                        <span>${parseFloat(order.tax).toFixed(2)}</span>
+                        <span>{formatINR(parseFloat(order.tax))}</span>
                       </div>
                       <div className="payment-row total">
                         <span>Total:</span>
-                        <span>${parseFloat(order.total).toFixed(2)}</span>
+                        <span>{formatINR(parseFloat(order.total))}</span>
                       </div>
                     </div>
                   </div>

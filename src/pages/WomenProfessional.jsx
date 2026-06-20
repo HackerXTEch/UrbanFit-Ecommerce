@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './WomenProfessional.css';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
+import { formatINR } from '../utils/currency';
 
 const WomenProfessional = () => {
   const { addToCart } = useCart();
@@ -161,8 +162,8 @@ const WomenProfessional = () => {
                   <p className="professional-product-desc">{p.desc}</p>
                   <p className="availability-status">{p.is_available ? '✓ In Stock' : 'Out of Stock'}</p>
                   <p className="professional-product-price">
-                    {p.originalPrice ? <span className="original-price">${p.originalPrice.toFixed(2)}</span> : null}
-                    <span className="current-price">${p.price.toFixed(2)}</span>
+                    {p.originalPrice ? <span className="original-price">{formatINR(p.originalPrice)}</span> : null}
+                    <span className="current-price">{formatINR(p.price)}</span>
                   </p>
                   <div className="professional-product-rating">
                     <span className="stars">{p.stars}</span>

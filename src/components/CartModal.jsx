@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
+import { formatINR } from '../utils/currency';
 import './CartModal.css';
 
 const CartModal = ({ isOpen, onClose }) => {
@@ -92,8 +93,8 @@ const CartModal = ({ isOpen, onClose }) => {
                       </div>
                     </div>
                     <div className="item-price">
-                      <span className="price">${(item.price * item.quantity).toFixed(2)}</span>
-                      <span className="unit-price">${item.price} each</span>
+                      <span className="price">{formatINR(item.price * item.quantity)}</span>
+                      <span className="unit-price">{formatINR(item.price)} each</span>
                     </div>
                   </div>
                 ))}
@@ -103,7 +104,7 @@ const CartModal = ({ isOpen, onClose }) => {
                 <div className="cart-summary">
                   <div className="summary-row">
                     <span>Subtotal ({totalItems} items):</span>
-                    <span className="total-price">${totalPrice.toFixed(2)}</span>
+                    <span className="total-price">{formatINR(totalPrice)}</span>
                   </div>
                   <div className="summary-row">
                     <span>Shipping:</span>
@@ -111,7 +112,7 @@ const CartModal = ({ isOpen, onClose }) => {
                   </div>
                   <div className="summary-row total">
                     <span>Total:</span>
-                    <span className="final-total">${totalPrice.toFixed(2)}</span>
+                    <span className="final-total">{formatINR(totalPrice)}</span>
                   </div>
                 </div>
 

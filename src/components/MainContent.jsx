@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { getFeaturedProducts } from '../services/api';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
+import { formatINR } from '../utils/currency';
 import Hero from './Hero';
 import './MainContent.css';
 
@@ -167,11 +168,11 @@ const MainContent = () => {
                     <p className="featured-product-price">
                       {product.original_price ? (
                         <>
-                          <span className="original-price">${product.original_price}</span>
-                          ${product.price}
+                          <span className="original-price">{formatINR(product.original_price)}</span>
+                          {formatINR(product.price)}
                         </>
                       ) : (
-                        `$${product.price}`
+                        formatINR(product.price)
                       )}
                     </p>
                     <div className="featured-product-rating">

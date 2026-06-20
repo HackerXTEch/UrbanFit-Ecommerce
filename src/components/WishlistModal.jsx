@@ -1,6 +1,7 @@
 import React from 'react';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
+import { formatINR } from '../utils/currency';
 import './WishlistModal.css';
 
 const WishlistModal = ({ isOpen, onClose }) => {
@@ -81,7 +82,7 @@ const WishlistModal = ({ isOpen, onClose }) => {
                       <h4 className="item-name">{item.product_name}</h4>
                       <p className="item-category">{item.category}</p>
                       <div className="item-price">
-                        <span className="price">${item.price}</span>
+                        <span className="price">{formatINR(item.price)}</span>
                         {item.is_available === 0 ? (
                           <span className="stock-status unavailable">Currently unavailable</span>
                         ) : (

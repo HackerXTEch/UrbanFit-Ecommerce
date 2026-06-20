@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
+import { formatINR } from '../utils/currency';
 import './Checkout.css';
 
 const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:3001';
@@ -138,15 +139,15 @@ ${shippingInfo.country}
 
 ORDER DETAILS
 ───────────────────────────────────────
-${cart.map(item => `${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`).join('\n')}
+${cart.map(item => `${item.name} x${item.quantity} - ${formatINR(item.price * item.quantity)}`).join('\n')}
 
 PAYMENT SUMMARY
 ───────────────────────────────────────
-Subtotal:        $${getCartTotal().toFixed(2)}
-Shipping:        $10.00
-Tax (10%):       $${(getCartTotal() * 0.1).toFixed(2)}
+Subtotal:        ${formatINR(getCartTotal())}
+Shipping:        ₹840
+Tax (10%):       ${formatINR(getCartTotal() * 0.1)}
 ───────────────────────────────────────
-TOTAL:           $${(getCartTotal() + 10 + (getCartTotal() * 0.1)).toFixed(2)}
+TOTAL:           ${formatINR(getCartTotal() + 840 + (getCartTotal() * 0.1))}
 
 Payment Method: ${paymentInfo.method.replace('_', ' ').toUpperCase()}
 Status: PAID
@@ -440,7 +441,7 @@ Status: PAID
                       Back
                     </button>
                     <button type="submit" className="btn-pay" disabled={loading}>
-                      {loading ? 'Processing...' : `Pay $${(getCartTotal() + 10 + (getCartTotal() * 0.1)).toFixed(2)}`}
+                      {loading ? 'Processing...' : `Pay ${formatINR(getCartTotal() + 840 + (getCartTotal() * 0.1))}`}
                     </button>
                   </div>
                 </form>
@@ -494,7 +495,7 @@ Status: PAID
                 </div>
                 <div className="order-total">
                   <span className="label">Total Paid:</span>
-                  <span className="value">${(getCartTotal() + 10 + (getCartTotal() * 0.1)).toFixed(2)}</span>
+                  <span className="value">{formatINR(getCartTotal() + 840 + (getCartTotal() * 0.1))}</span>
                 </div>
               </div>
 
@@ -507,7 +508,7 @@ Status: PAID
                       <h4>{item.name}</h4>
                       <p>Quantity: {item.quantity}</p>
                     </div>
-                    <div className="item-price">${(item.price * item.quantity).toFixed(2)}</div>
+                    <div className="item-price">{formatINR(item.price * item.quantity)}</div>
                   </div>
                 ))}
               </div>
@@ -544,7 +545,7 @@ Status: PAID
                       <h4>{item.name}</h4>
                       <p>Qty: {item.quantity}</p>
                     </div>
-                    <span className="item-total">${(item.price * item.quantity).toFixed(2)}</span>
+                    <span className="item-total">{formatINR(item.price * item.quantity)}</span>
                   </div>
                 ))}
               </div>
@@ -552,19 +553,19 @@ Status: PAID
               <div className="summary-calculations">
                 <div className="calc-row">
                   <span>Subtotal</span>
-                  <span>${getCartTotal().toFixed(2)}</span>
+                  <span>{formatINR(getCartTotal())}</span>
                 </div>
                 <div className="calc-row">
                   <span>Shipping</span>
-                  <span>$10.00</span>
+                  <span>₹840</span>
                 </div>
                 <div className="calc-row">
                   <span>Tax (10%)</span>
-                  <span>${(getCartTotal() * 0.1).toFixed(2)}</span>
+                  <span>{formatINR(getCartTotal() * 0.1)}</span>
                 </div>
                 <div className="calc-row total">
                   <span>Total</span>
-                  <span>${(getCartTotal() + 10 + (getCartTotal() * 0.1)).toFixed(2)}</span>
+                  <span>{formatINR(getCartTotal() + 840 + (getCartTotal() * 0.1))}</span>
                 </div>
               </div>
             </div>

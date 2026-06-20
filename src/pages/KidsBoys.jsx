@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { getProductsByTypeAndCategory } from '../services/api';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
+import { formatINR } from '../utils/currency';
 import './KidsBoys.css';
 
 const KidsBoys = () => {
@@ -166,9 +167,9 @@ const KidsBoys = () => {
                     
                     <p className="boys-product-price">
                       {product.original_price && (
-                        <span className="original-price">${product.original_price}</span>
+                        <span className="original-price">{formatINR(product.original_price)}</span>
                       )}
-                      ${product.price}
+                      {formatINR(product.price)}
                     </p>
                     
                     <div className="boys-product-rating">
