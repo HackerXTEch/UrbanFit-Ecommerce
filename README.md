@@ -126,9 +126,10 @@ UrbanFit is as much about people as it is about clothes.
 
 <br>
 <div align="center">
-  <img src="screenshots/faq.png" alt="UrbanFit Homepage" width="800">
+  <img src="screenshots/community.png" alt="UrbanFit Homepage" width="800">
 </div>
 <br>
+
 ---
 
 ## **FAQ**
@@ -149,6 +150,13 @@ Availability depends on region (shown at checkout), and major cards are supporte
 
 **Still have questions?**
 Use **Contact Us** in the app, or open a for anything project-related.
+
+<br>
+<div align="center">
+  <img src="screenshots/faq.png" alt="UrbanFit Homepage" width="800">
+</div>
+<br>
+
 
 ---
 
