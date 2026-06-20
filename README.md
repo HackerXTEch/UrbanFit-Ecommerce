@@ -1,10 +1,19 @@
 # 👟 **UrbanFit**
 *Style That Moves With You*
 
-Welcome to UrbanFit - your digital closet, your style scout, and your favorite fitting room, all in one place. We're not just selling clothes; we're curating looks, building confidence, and helping you step out in something that actually feels like *you*.
+<i> Welcome to **UrbanFit** your digital closet, your style scout, and your favorite fitting room, all in one place. We're not just selling clothes; we're curating looks, building confidence, and helping you step out in something that actually feels like *you*. </i>
 
 <div align="center">
   <img src="screenshots/homepage.png" alt="UrbanFit Homepage" width="800">
+</div>
+
+<div align="center">
+
+![React](https://img.shields.io/badge/Frontend-React-61DAFB?logo=react&logoColor=white)
+![Node.js](https://img.shields.io/badge/Backend-Node.js-339933?logo=node.js&logoColor=white)
+![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
+![License](https://img.shields.io/badge/License-MIT-blue)
+
 </div>
 
 ---
@@ -13,16 +22,20 @@ Welcome to UrbanFit - your digital closet, your style scout, and your favorite f
 * [About UrbanFit](#about-urbanfit)
 * [What Makes Us Special](#what-makes-us-special)
 * [Features](#features)
+* [Size Guide](#size-guide)
+* [Community](#community)
+* [FAQ](#faq)
 * [Getting Started](#getting-started)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Tech Stack](#tech-stack)
 * [Contributing](#contributing)
 * [Terms & Love](#terms--love)
 
 ---
 
 ## **About UrbanFit**
-UrbanFit isn't just another shopping app - it's your personal stylist, wardrobe curator, and outfit companion all rolled into one delightful experience. Whether you're chasing the latest streetwear drop or building a timeless everyday wardrobe, we've crafted something special just for you.
+UrbanFit isn't just another shopping app it's your personal stylist, wardrobe curator, and outfit companion all rolled into one delightful experience. Whether you're chasing the latest streetwear drop or building a timeless everyday wardrobe, we've crafted something special just for you.
 
 **Our Mission:** To turn everyday dressing into a moment of self-expression through technology, community, and effortless style.
 
@@ -36,7 +49,7 @@ UrbanFit isn't just another shopping app - it's your personal stylist, wardrobe 
 
 ### 🌟 **The UrbanFit Experience**
 - **Curated Collections:** From everyday essentials to statement pieces, every drop is handpicked
-- **Style for Everyone:** Looks for men, women, and kids — because the whole family deserves to look good
+- **Style for Everyone:** Looks for men, women, and kids because the whole family deserves to look good
 - **Smart Shopping:** Browse by category, discover featured picks, and find exactly what fits your vibe
 - **Warm Community:** Join a growing crew of people who care about how they show up
 
@@ -46,7 +59,7 @@ UrbanFit isn't just another shopping app - it's your personal stylist, wardrobe 
 
 ### 👕 **Fashion, Found Fast**
 - **Featured Picks:** Hand-selected pieces our team can't stop talking about
-- **Shop by Category:** Men's, women's, and kids' fits — organized so you find your thing fast
+- **Shop by Category:** Men's, women's, and kids' fits organized so you find your thing fast
 - **Effortless Browsing:** A smooth, snappy interface that gets out of your way
 
 <br>
@@ -86,6 +99,59 @@ UrbanFit isn't just another shopping app - it's your personal stylist, wardrobe 
 
 ---
 
+## **Size Guide**
+
+Finding the right fit shouldn't be a guessing game. Here's our general sizing reference across categories always paired with a size chart on the product page itself.
+
+<div align="center">
+  <img src="screenshots/sizehandle.png" alt="UrbanFit Homepage" width="800">
+</div>
+
+**Sizing Tips:**
+- Between sizes? We recommend sizing up for a relaxed streetwear fit, or sizing down for a tailored look.
+- Kids' sizing follows age-based ranges (2–14 years) with a dedicated chart on each kids' product page.
+- All measurements are body measurements, not garment measurements — check individual product descriptions for fabric stretch and fit notes (slim/regular/oversized).
+
+---
+
+## **Community**
+
+UrbanFit is as much about people as it is about clothes.
+
+- 💬 **Discussions:** Share feedback, request features, or just talk style
+- 🐛 **Issues & Bugs:** Found something off?
+- 🌱 **Good First Issues:** New to the project (or to open source)? Look out for issues tagged `good-first-issue`
+- 📣 **Show & Tell:** Built something cool on top of UrbanFit, or styled a fit using our mock catalog? Tag us — we love seeing what the community creates
+- 🤝 **Code of Conduct:** Be kind, be constructive, be curious. This is a learning space first, a shopping app second
+
+<br>
+<div align="center">
+  <img src="screenshots/faq.png" alt="UrbanFit Homepage" width="800">
+</div>
+<br>
+---
+
+## **FAQ**
+
+A few quick answers same questions covered in the app's own FAQ page.
+
+**What's your return/shipping policy?**
+Standard and express shipping options are shown at checkout, and items can be returned within the eligible window if unused and in original packaging.
+
+**How can I track or cancel my order?**
+Both are handled from your account's Order History page track shipments or cancel/modify before the order ships.
+
+**How do I know my size?**
+Check the size above, or the size chart on each product page.
+
+**Do you ship internationally, and what payments do you accept?**
+Availability depends on region (shown at checkout), and major cards are supported through a secure checkout flow.
+
+**Still have questions?**
+Use **Contact Us** in the app, or open a for anything project-related.
+
+---
+
 ## **Getting Started**
 
 ### **Prerequisites**
@@ -97,7 +163,7 @@ Before stepping into the UrbanFit experience, ensure you have:
 
 ### **What You'll Need**
 - A local environment to run the frontend and backend together
-- Nothing fancy — just your terminal and a sense of curiosity
+- Nothing fancy just your terminal and a sense of curiosity
 
 ---
 
@@ -137,6 +203,21 @@ npm run dev
 ```
 
 Visit `http://localhost:5173` and watch your new favorite storefront come alive! ✨
+
+---
+
+## **Tech Stack**
+
+| Layer | Technology |
+|-------|-----------|
+| Frontend | React, Vite |
+| Backend | Node.js, Express |
+| Styling | CSS / responsive design |
+| Auth | Secure session-based sign-in |
+| State Management | React hooks/context |
+| Version Control | Git & GitHub |
+
+*This stack was chosen to demonstrate a complete, production-style full-stack workflow from routing and state management to API design and secure authentication.*
 
 ---
 
