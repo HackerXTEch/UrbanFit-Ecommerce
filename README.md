@@ -4,8 +4,7 @@
 Welcome to UrbanFit - your digital closet, your style scout, and your favorite fitting room, all in one place. We're not just selling clothes; we're curating looks, building confidence, and helping you step out in something that actually feels like *you*.
 
 <div align="center">
-  <img src="screenshots/Homepage.png" alt="UrbanFit Homepage" width="400">
-  <img src="screenshots/homepage2.png" alt="UrbanFit Homepage 2" width="400">
+  <img src="screenshots/homepage.png" alt="UrbanFit Homepage" width="800">
 </div>
 
 ---
@@ -52,7 +51,7 @@ UrbanFit isn't just another shopping app - it's your personal stylist, wardrobe 
 
 <br>
 <div align="center">
-  <img src="screenshots/featured.png" alt="Featured Collection" width="400">
+  <img src="screenshots/features.png" alt="Featured Collection" width="450">
   <img src="screenshots/categorypage.png" alt="Category Page" width="400">
 </div>
 <br>
@@ -75,7 +74,8 @@ UrbanFit isn't just another shopping app - it's your personal stylist, wardrobe 
 
 <br>
 <div align="center">
-  <img src="screenshots/checkout.png" alt="Checkout Experience" width="800">
+  <img src="screenshots/checkout1.png" alt="Checkout Experience" width="400">
+  <img src="screenshots/checkout2.png" alt="Checkout Experience" width="400">
 </div>
 <br>
 
